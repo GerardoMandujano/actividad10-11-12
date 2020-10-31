@@ -1,0 +1,40 @@
+<%- include('header') -%>
+    <h1>
+        <h1>Productos</h1>
+
+    </h1>
+    <table>
+
+
+        <tr>
+            <th>Nombre</th>
+            <th>Descripccion</th>
+            <th>Precio</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+        </tr>
+
+        <% producto.forEach(function(producto){ %>
+            <tr>
+
+
+                <td>
+                    <%= producto.nombre%>
+                </td>
+                <td>
+                    <%= producto.descripccion%>
+                </td>
+                <td>
+                    <%= producto.precio%>
+                </td>
+                <td>
+                    <a href="/productos/update/<%=producto.id%>">Editar</a>
+                </td>
+                <td>
+                    <a href="/productos/delete/<%=producto.id%>">Eliminar</a>
+                </td>
+            </tr>
+            <% }); %>
+    </table>
+
+    <%- include('footer') -%>

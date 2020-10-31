@@ -1,0 +1,31 @@
+        body {
+            padding: 50px;
+            font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+            box-sizing: border-box;
+        }
+        
+        ul li {
+            display: inline-block;
+        }
+        
+        a {
+            color: #00B7FF;
+        }
+        
+        .titulo-form {
+            display: flex;
+        }
+        
+        .titulo-form h2 {
+            margin: 0px 60px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        form input[type="radio"] {
+            padding: 10px;
+            margin: 10px;
+        }

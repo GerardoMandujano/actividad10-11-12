@@ -1,0 +1,10 @@
+<%- include('header') -%>
+    <h1>Formulario de registro de productos</h1>
+    <form action="/productos/update-product/<%=id%>" method="post">
+        <label for="producto">  Producto</label>
+        <input type="text" name="nombre" id="producto" placeholder="nombre del producto" required max="5" value="<%=nombre%>"> <label for="producto">Descripccion:</label>
+        <input type="text" name="descripccion" id="departamento" placeholder="Ejemplo:linea blanca" value="<%=descripccion%>" required>
+        <label for="producto">Precio</label>
+        <input type="text" name="precio" id="precio" placeholder="1200" required pattern="[0-9]*" value="<%= precio%>">
+        <input type="submit" value="Enviar datos">
+    </form>
